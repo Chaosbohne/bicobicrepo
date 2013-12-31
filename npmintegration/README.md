@@ -1,13 +1,16 @@
-
+This package is based on my blogpost http://www.bicobic.com/posts/CNBkEbaA3BeMNQamk
+that describes the ways to add a npm-module to your project
 
 Adding npm packages this way works with meteor the same way as with meteorite:
 
-1. mrt create npmintegration OR meteor create npmintegration
--- delete all files in this folder
+1. mrt create npmintegration OR meteor create npmintegration  
 
-2. Packageconfiguration
-mkdir packages
-  mkdir hashids
+  -- delete all files in this folder
+
+2. Packageconfiguration 
+
+  mkdir packages
+   mkdir hashids
     touch package.js
       Package.describe({
         summary: "Adding the npm-module hashids."
@@ -27,8 +30,10 @@ mkdir packages
     touch hashids.js
       Hashids = Npm.require("hashids");  
 
-mkdir server
-  touch startup.js
+  mkdir server
+  
+   touch startup.js
+   
     Meteor.startup(function() {
       var hashids = new Hashids('this is my salt');
       var numbers = hashids.decrypt("NkK9");
