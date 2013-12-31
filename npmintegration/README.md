@@ -49,9 +49,7 @@ Adding npm packages this way works with meteor the same way as with meteorite:
     
 
 3. Add this package to your app  
-4. 
-  *meteor add hashids*
+ *meteor add hashids*
   
 4. Start your project  
-5. 
-  *meteor* OR *mrt*
+ *meteor* OR *mrt*
