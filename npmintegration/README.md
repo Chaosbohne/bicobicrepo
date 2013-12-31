@@ -3,9 +3,8 @@ that describes the ways to add a npm-module to your project
 
 Adding npm packages this way works with meteor the same way as with meteorite:
 
-1. *mrt create npmintegration* OR *meteor create npmintegration*
-
-  -- delete all files in this folder
+1. *mrt create npmintegration* OR *meteor create npmintegration*  
+ -- delete all files in this folder
 
 2. Packageconfiguration 
 
