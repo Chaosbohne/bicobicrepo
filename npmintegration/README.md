@@ -10,8 +10,11 @@ Adding npm packages this way works with meteor the same way as with meteorite:
 2. Packageconfiguration 
 
   mkdir packages  
-   mkdir hashids  
-    touch package.js
+  
+    mkdir hashids  
+    
+      touch package.js
+      
       Package.describe({
         summary: "Adding the npm-module hashids."
       });
