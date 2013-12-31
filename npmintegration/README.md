@@ -28,7 +28,7 @@ Adding npm packages this way works with meteor the same way as with meteorite:
             api.export('Hashids');  
       });   
 
-  ---touch hashids.js
+  ---touch hashids.js  
   
       Hashids = Npm.require("hashids");  
 
