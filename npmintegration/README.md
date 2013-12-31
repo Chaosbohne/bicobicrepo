@@ -30,7 +30,8 @@ Adding npm packages this way works with meteor the same way as with meteorite:
 
   ---touch hashids.js  
   
-      Hashids = Npm.require("hashids");  
+      Hashids = Npm.require("hashids");   
+      
 
   -mkdir server
   --touch startup.js
@@ -40,7 +41,8 @@ Adding npm packages this way works with meteor the same way as with meteorite:
       var numbers = hashids.decrypt("NkK9");
       console.log(numbers);
       //prints 12345
-    });  
+    });    
+    
 
 3. Add this package to your app
   meteor add hashids
