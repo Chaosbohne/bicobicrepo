@@ -34,11 +34,11 @@ Adding npm packages this way works with meteor the same way as with meteorite:
   
       Hashids = Npm.require("hashids");   
       
-  ---cd ..
-  --cd ..
-  -mkdir server
-  -cd server
-  --touch startup.js  
+  ---cd ..  
+  --cd ..  
+  -mkdir server  
+  -cd server  
+  --touch startup.js 
    
       Meteor.startup(function() {
         var hashids = new Hashids('this is my salt');
