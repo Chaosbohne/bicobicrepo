@@ -18,15 +18,15 @@ This example descibes how to add npm packages with the meteorite module meteor-n
 
 4. Create a startupfile where we want to use our dependency  
 
-      Meteor.startup(function() {
-        //This loads the NPM module you have specified in your packages.json
-        var Hashids = Meteor.require('hashids');
-        //Now you can use this package like always :)
-        var hashids = new Hashids('this is my salt');
-        var numbers = hashids.decrypt("NkK9");
-        console.log(numbers);
-        //prints 12345
-      });
+        Meteor.startup(function() {
+          //This loads the NPM module you have specified in your packages.json
+          var Hashids = Meteor.require('hashids');
+          //Now you can use this package like always :)
+          var hashids = new Hashids('this is my salt');
+          var numbers = hashids.decrypt("NkK9");
+          console.log(numbers);
+          //prints 12345
+        });
       
 5. Start your project *mrt*
 
